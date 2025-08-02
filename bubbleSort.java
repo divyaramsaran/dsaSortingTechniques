@@ -30,5 +30,9 @@ class bubbleSort {
 
         sort obj = new sort();
         int [] sortedArray = obj.sortArray(array, length);
+
+        for(int index = 0; index < length; index++){
+            System.out.println(sortedArray[index]);
+        }
     }
 }
