@@ -1,9 +1,19 @@
 import java.util.Scanner;
 
 class sort {
-    void sortArray () {
-
+    int sortArray (array, length) {
+        for(int index = 0; index < length; index++) {
+            for(int subIndex = 0; subIndex < length - i; subIndex++) {
+                if(array[subIndex] > arr[subIndex + 1]) {
+                    array[subIndex] = array[subIndex] + array[subIndex + 1];
+                    array[subIndex + 1] = array[subIndex] - array[subIndex + 1];
+                    array[subIndex] = array[subIndex] - array[subIndex + 1];
+                }
+            }
+        }
+        return array;
     }
+
 }
 
 class bubbleSort {
