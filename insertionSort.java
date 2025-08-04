@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class sort {
-    int [] sort (int [] array, int length) {
+    int [] sortArray (int [] array, int length) {
         for (int index = 0; index < length - 1; index++){
             int subIndex = index + 1;
             while(subIndex != 0){
@@ -25,9 +25,17 @@ class insertionSort {
         int length = sc.nextInt();
         System.out.println("Enter the elements of the array");
         int array[] = new int [length];
+        
         for(int range = 0; range < length; range++) {
             array[range] = sc.nextInt();
         }  
+
+        sort obj = new sort();
+        int [] sortedArray = obj.sortArray(array, length);
+
+        for(int range = 0; range < length; range++) {
+            System.out.print(sortedArray[range] + " ");
+        }
 
     }
 }
