@@ -10,9 +10,9 @@ class sort {
                     }
             }
             if(index != minIndex) {
-                array[index] = array[index] + array[minIndex];
-                array[minIndex] = array[index] - array[minIndex];
-                array[index] = array[index] - array[minIndex];
+                int temp = array[index];
+                array[index] = array[minIndex];
+                array[minIndex] = temp;
             }
         }
         return array;
