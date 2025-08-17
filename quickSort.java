@@ -1,5 +1,15 @@
 import java.util.Scanner;
 
+class sort {
+    void quickSort (int [] array, int lower, int upper) {
+        if (lower < upper) {
+            int pivot = partition(array, lower, upper);
+            quickSort(array, lower, pivot - 1);
+            quickSort(array, pivot + 1, upper);
+        }
+    }
+}
+
 public class quickSort {
     public static void main(String args []) {
         System.out.println("Enter the length of the array");
