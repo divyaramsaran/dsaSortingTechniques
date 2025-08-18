@@ -8,6 +8,25 @@ class sort {
             quickSort(array, pivot + 1, upper);
         }
     }
+
+    int partition (int [] array, int lower, int upper) {
+        int pivot = array[upper];
+        int i = (lower - 1);
+        for (int j = lower; j < upper; j++) {
+            if (array[j] < pivot) {
+                i++;
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+        int temp = array[i + 1];
+        array[i + 1] = array[upper];
+        array[upper] = temp;
+        return i + 1;
+    }
+
+    
 }
 
 public class quickSort {
