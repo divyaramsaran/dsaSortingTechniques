@@ -26,7 +26,19 @@ class sort {
         return i + 1;
     }
 
-    
+    void displayArray(int[] array) {
+        for (int i : array) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
+    void sortArray(int[] array) {
+        quickSort(array, 0, array.length - 1);
+        System.out.println("Sorted array:");
+        displayArray(array);
+    }
+
 }
 
 public class quickSort {
