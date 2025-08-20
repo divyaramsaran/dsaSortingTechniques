@@ -52,5 +52,8 @@ public class quickSort {
         for(int i = 0; i < length; i++) {
             arrary[i] = sc.nextInt();
         }
+
+        sort sorter = new sort();
+        sorter.sortArray(arrary);
     }
 }
